@@ -7,11 +7,9 @@
 1. `Прикрепите в файл README.md скриншот авторизации в админке.`
 2. `Приложите в файл README.md текст использованных команд в GitHub`
 
-`
 Скриншоты
-![Zabbix Frontend Login](https://github.com/hovhannisyan-code/gitlab-hw/blob/main/img/Screenshot_1.png)`
-`
-![Zabbix Frontend Dashboard](https://github.com/hovhannisyan-code/gitlab-hw/blob/main/img/Screenshot_1.png)`
+![Zabbix Frontend Login](https://github.com/hovhannisyan-code/gitlab-hw/blob/main/img/Screenshot_1.png)
+![Zabbix Frontend Dashboard](https://github.com/hovhannisyan-code/gitlab-hw/blob/main/img/Screenshot_1.png)
 
 ```
 # Установка PostgreSQL
