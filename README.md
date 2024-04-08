@@ -30,11 +30,16 @@ su - postgres -c 'psql --command "CREATE DATABASE zabbix OWNER zabbix;"'
 zcat /usr/share/zabbix-sql-scripts/postgresql/server.sql.gz | sudo -u zabbix psql zabbix
 
 # Настройка Zabbix Server
-sudo nano /etc/zabbix/zabbix_server.conf
-DBPassword=123456789
+sed -i 's/# DBPassword=/DBPassword=123456789/g' /etc/zabbix/zabbix_server.conf
 
-# Перезапуск Zabbix Server
-sudo systemctl restart zabbix-server
+# Настройка PHP для веб-интерфейса
+sudo nano /etc/zabbix/nginx.conf
+listen 8080;
+server_name example.com;
+
+# Перезапуск Zabbix Server, Nginx, php-fpm
+systemctl restart zabbix-server nginx php8.1-fpm
+systemctl enable zabbix-server nginx php8.1-fpm
 ```
 
 ---
