@@ -65,4 +65,16 @@ apt install zabbix-agent
 sed -i 's/Server=127.0.0.1/Server=YOUR IP ADDRESS'/g' /etc/zabbix/zabbix_server.conf
 systemctl restart zabbix-agent
 systemctl enable zabbix-agent
+
 ```
+
+### Задание 3 со звёздочкой\*
+
+`Установите Zabbix Agent на Windows (компьютер) и подключите его к серверу Zabbix.`
+
+1. `Приложите в файл README.md скриншот раздела Latest Data, где видно свободное место на диске C:`
+
+Скриншоты
+
+![Free Space](https://github.com/hovhannisyan-code/gitlab-hw/blob/main/img/Screenshot_5.png)
+![Item](https://github.com/hovhannisyan-code/gitlab-hw/blob/main/img/Screenshot_6.png)
